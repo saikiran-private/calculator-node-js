@@ -1,0 +1,51 @@
+/* Base Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Fancy Card Styling */
+.fancy-card {
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.85);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fancy Button Enhancement */
+.fancy-btn {
+  transition: background 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.fancy-btn:hover {
+  background: #0056b3;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Styling with Fade-In Effect */
+.result-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+.result-text.visible {
+  opacity: 1;
+}
+
+/* Keyframe for Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
